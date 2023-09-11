@@ -1,11 +1,11 @@
 #Project Information
-site_name: HCL Connections 8.0 CR2 Help Center 
+site_name: HCL Connections 8.0 CR1 Help Center 
 site_description: >-
   A next-gen documentation site for HCL Connections.
 site_url: https://opensource.hcltechsw.com/connections-documentation
 use_directory_urls: false
-docs_dir: v8-cr2
-site_dir: docs/v8-cr2
+docs_dir: v8-cr1
+site_dir: docs/v8-cr1
 
 # Theme Configuration
 theme:
@@ -74,7 +74,6 @@ nav:
 # What's New
       - What&apos;s new in Connections&quest;: 
         - admin/overview/whats_new.md
-        - Connections 8.0 CR2: admin/overview/i_ovr_r_whats_new_cr2.md        
         - Connections 8.0 CR1: admin/overview/i_ovr_r_whats_new_cr1.md        
         - Connections 8.0: admin/overview/i_ovr_r_whats_new.md
 # Administering
@@ -89,7 +88,7 @@ nav:
           - Audience: admin/plan/c_audience.md
           - Directory path conventions: admin/plan/i_ovr_r_directory_conventions.md
           - Deployment options: admin/plan/c_planning_the_installation.md
-          - Deployment requirements for supporting Connections 8.0 CR2 functionality: admin/plan/supported_features.md
+          - Deployment requirements for supporting Connections 8.0 CR1 functionality: admin/plan/supported_features.md
           - HCL Connections system requirements: admin/plan/r_install_prerqs.md
           - HCL Connections support statement: admin/plan/r_install_support_statements.md
           - Worksheet for installing HCL Connections: admin/plan/r_worksheet_installation.md
@@ -314,13 +313,6 @@ nav:
                - admin/install/c_install_share_application.md
                - Setting up share dialog: admin/install/c_install_share_dialog.md
                - Enabling MS Teams within Share: admin/install/c_install_enable_ms_teams_share.md
-             - Installing HCL Leap Surveys:
-               - admin/install/leap_surveys.md
-               - Installing HCL Leap: admin/install/leap_install.md
-               - Post-installation tasks: admin/install/leap_post_install.md
-               - Setting up the Leap widgets: admin/install/leap_widgets.md
-               - Upgrading from Communities Surveys to Leap Surveys: admin/install/leap_upgrade.md
-               - Migrating Community Surveys and response data to Leap Surveys: admin/install/leap_migrate.md
         - Optional&colon; Installing and configuring Tiny Editors for HCL Connections:
           - admin/install/tiny_editors/c_tiny-editors.md
           - Installing Tiny Editors for HCL Connections: 
@@ -492,11 +484,11 @@ nav:
             - admin/migrate/c_inplace_upgrade.md
             - Considerations for an in-place or hybrid upgrade: admin/migrate/c_inplace_upgrade_considerations.md
             - Performing an in-place or hybrid upgrade: admin/migrate/t_upgrading_to_7.md
-            #- Updating databases: 
-              #- admin/migrate/t_update_databases-manual.md
-              #- Updating Db2 databases: admin/migrate/t_update_3.0.1_DB2_manual.md
-              #- Updating Oracle databases: admin/migrate/t_update_3.0.1_ORA_manual.md
-              #- Updating SQL Server databases: admin/migrate/t_update_3.0.1_SQL-Server_manual.md
+            - Updating databases: 
+              - admin/migrate/t_update_databases-manual.md
+              - Updating Db2 databases: admin/migrate/t_update_3.0.1_DB2_manual.md
+              - Updating Oracle databases: admin/migrate/t_update_3.0.1_ORA_manual.md
+              - Updating SQL Server databases: admin/migrate/t_update_3.0.1_SQL-Server_manual.md
           - Enabling the Connections 8.0 user experience: admin/migrate/enabling_cnx8_ux.md
           - Updating Connections 8.0 with the latest fixes: 
             - admin/migrate/c_updating_interim_fixes.md
@@ -665,6 +657,7 @@ nav:
                 - Hiding email addresses: admin/admin/t_admin_common_hide_email_using_script.md
                 - Exposing email addresses: admin/admin/t_admin_common_expose_email_using_script.md
                 - Enabling users to set a language preference: admin/admin/t_admin_common_enable_lang_change.md
+                - Adding Sametime awareness though the Sametime client: admin/admin/t_admin_common_add_st_awareness.md
                 - Adding Sametime awareness through the Sametime server: admin/admin/t_admin_common_add_st_awareness_via_proxy.md
                 - Disabling applications: admin/admin/t_admin_common_turning_off.md
                 - Disabling the gallery and the grid view of files: admin/admin/t_admin_common_disable_gallery.md
@@ -1997,5 +1990,5 @@ nav:
         - guide_me/guide_me.md
         - How to guides:
           - guide_me/how_to_guides/how_to_guides.md
-          - Connections 8.0 CR2 Sizing Guide: guide_me/how_to_guides/connections8_sizing_guide.pdf
-          - Connections 8.0 CR2 Troubleshooting Component Pack: guide_me/how_to_guides/troubleshooting_cnx_cp.pdf
+          - Connections 8.0 CR1 Sizing Guide: guide_me/how_to_guides/connections8_sizing_guide.pdf
+          - Connections 8.0 CR1 Troubleshooting Component Pack: guide_me/how_to_guides/troubleshooting_cnx_cp.pdf
