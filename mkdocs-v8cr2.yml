@@ -2,7 +2,7 @@
 site_name: HCL Connections 8.0 CR2 Help Center 
 site_description: >-
   A next-gen documentation site for HCL Connections.
-site_url: https://opensource.hcltechsw.com/connections
+site_url: https://opensource.hcltechsw.com/connections-documentation
 use_directory_urls: false
 docs_dir: v8-cr2
 site_dir: docs/v8-cr2
@@ -54,8 +54,8 @@ extra:
     provider: mike
 
 # Repository
-repo_url: https://github.com/HCL-TECH-SOFTWARE/connections-doc
-repo_name: hcl-software/connections-doc
+repo_url: https://github.com/HCL-TECH-SOFTWARE/connections-documentation
+repo_name: hcl-software/connections-documentation
 edit_uri: edit/main/docs
 
 
