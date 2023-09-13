@@ -115,5 +115,60 @@ margin-left: 180px;
 margin-right: 150px;
 text-align: center;
 
+/*Styles for Language selector */
+
+.scLangCustomSelector {
+    all: unset;
+    position: relative;
+    font-family: "Inter", sans-serif;
+    padding: 0;
+    opacity: 0;
+    cursor: unset;
+    display: inline-block;
+}
+
+.scLangCustomSelector-TopLeft {
+    top: 20px;
+    left: 20px;
+}
+
+.scLangCustomSelector-TopRight {
+}
+
+.scLangCustomSelector-TopRight .scLangPanel {
+    top: 0;
+    right: 0;
+    bottom: unset;
+}
+
+.scLangCustomSelector-BottomLeft {
+    bottom: 20px;
+    left: 20px;
+}
+
+.scLangCustomSelector-BottomRight {
+    bottom: 20px;
+    right: 20px;
+}
+
+.scLangCustomSelector-None {
+    display: none;
+}
+
+.scLangCustomSelector, .scLangCustomSelector:focus {
+    background: transparent !important;
+    border: 0 !important;
+    outline: 0 !important;
+    outline-offset: 0 !important;
+}
+
+.scLangCustomSelector.fadeIn {
+    transition: opacity 0.5s ease-out;
+}
+
+.scLangCustomSelector.shown {
+    opacity: 1;
+}
+
 }
 
