@@ -43,6 +43,9 @@ markdown_extensions:
   - toc:
       title: On this page
 
+extra_javascript:
+  - javascripts/scCustLangSelect.js
+
 extra:
 #  analytics: 
 #    provider: custom
