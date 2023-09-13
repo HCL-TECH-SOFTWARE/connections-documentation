@@ -44,7 +44,7 @@ markdown_extensions:
       title: On this page
 
 extra_javascript:
-  - javascripts/scCustLangSelect.js
+  - assets/javascripts/scCustLangSelect.js
 
 extra:
 #  analytics: 
