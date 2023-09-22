@@ -1,24 +1,50 @@
+
 window.ScCustomLangSelector = function(cfg) {
-	cfg.location = 'TopRight';
+ cfg.location = 'TopRight';
 
 
     const icon = `
-    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path id="scLangCustomSelectorIcon" d="M16.4001 9.00156C16.4001 13.0885 13.087 16.4016 9.0001 16.4016M16.4001 9.00156C16.4001 4.91466 13.087 1.60156 9.0001 1.60156M16.4001 9.00156H1.6001M9.0001 16.4016C4.91319 16.4016 1.6001 13.0885 1.6001 9.00156M9.0001 16.4016C10.851 14.3752 11.9029 11.7455 11.9601 9.00156C11.9029 6.25767 10.851 3.62794 9.0001 1.60156M9.0001 16.4016C7.14915 14.3752 6.09726 11.7455 6.0401 9.00156C6.09726 6.25767 7.14915 3.62794 9.0001 1.60156M1.6001 9.00156C1.6001 4.91466 4.91319 1.60156 9.0001 1.60156"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>`;
+    
+<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+
+<path id="scLangCustomSelectorIcon" d="M16.4001 9.00156C16.4001 13.0885 13.087 16.4016 9.0001 16.4016M16.4001 9.00156C16.4001 4.91466 13.087 1.60156 9.0001 1.60156M16.4001 9.00156H1.6001M9.0001 16.4016C4.91319 16.4016 1.6001 13.0885 1.6001 9.00156M9.0001 16.4016C10.851 14.3752 11.9029 11.7455 11.9601 9.00156C11.9029 6.25767 10.851 3.62794 9.0001 1.60156M9.0001 16.4016C7.14915 14.3752 6.09726 11.7455 6.0401 9.00156C6.09726 6.25767 7.14915 3.62794 9.0001 1.60156M1.6001 9.00156C1.6001 4.91466 4.91319 1.60156 9.0001 1.60156"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    
+
+</svg>`;
 
     const loader = `
-    <div class="sc-loader">
-        <span></span><span></span>
-        <span></span><span></span>
-    </div>
+
+<div class="sc-loader">
+        
+
+<span>
+
+</span>
+
+<span>
+
+</span>
+        
+
+<span>
+
+</span>
+
+<span>
+
+</span>
+    
+
+</div>
     `;
 
     const selectorStyles = `
    .scLangCustomSelectorLabel {
         display: flex;
+		width: fit-content;
         align-items: center;
-        background: black;
+        background: #262626;
         padding: 10px 20px;
         color: white !important;
         line-height: 13px;
@@ -31,9 +57,13 @@ window.ScCustomLangSelector = function(cfg) {
         opacity: 1;
         direction: ltr;
     }
-
+	#scLangSelectorContainer {
+		right: 40px;
+		top: 20px;
+		
+	}
     .scLangCustomSelectorLabel span {
-        display: block;
+        display: inline-block;
     }
 
     .scLangCustomSelectorLabel span:first-letter, .scLangItem:first-letter {
@@ -67,7 +97,7 @@ window.ScCustomLangSelector = function(cfg) {
     }
 
     .scLangPanel {
-        position: absolute;
+        position: relative;
         bottom: calc(100% + 3px);
         right: 0;
 
@@ -118,7 +148,7 @@ window.ScCustomLangSelector = function(cfg) {
 
     .scLangItem {
         transition: background 0.1s ease-out;
-        flex: 1;
+        flex: 0;
         border-radius: 6px;
         white-space: nowrap;
         font-size: 13px;
@@ -136,18 +166,7 @@ window.ScCustomLangSelector = function(cfg) {
         line-height: 16px;
         font-weight: 400;
     }
-	
-	.scLangCustomSelector-arrow{
-		display: inline-block;
-		margin-left: 0.255em;
-		vertical-align: 0.255em;
-		content: "";
-		border-top: 0.3em solid white;
-		border-right: 0.3em solid transparent;
-		border-bottom: 0;
-		border-left: 0.3em solid transparent;
-	}
-	
+
     .scLangCustomSelectorWatermark a {
         color: #797389;
         text-decoration: underline;
@@ -251,7 +270,6 @@ window.ScCustomLangSelector = function(cfg) {
         }
     }
 
-
     function onClickOutside(
         root,
         target,
@@ -300,7 +318,7 @@ window.ScCustomLangSelector = function(cfg) {
     this._isLoading = false;
 
     this.root = () => {
-        return this.button?.shadowRoot;
+        return this.button.shadowRoot;
     };
 
     this.init = async () => {
@@ -376,7 +394,10 @@ window.ScCustomLangSelector = function(cfg) {
         const watermarkInfo = new HTMLElementInfo(
             'span',
             ['scLangCustomSelectorWatermark'],
-            `Powered by <a href="https://smartcat.com/" target="_blank">Smartcat</a>`,
+            `Powered by 
+
+<a href="https://smartcat.com/" target="_blank">Smartcat
+</a>`,
             this.root(),
             undefined
         );
@@ -384,16 +405,20 @@ window.ScCustomLangSelector = function(cfg) {
         const selectedLangInfo = new HTMLElementInfo(
             'div',
             ['scLangCustomSelectorLabel', `scLangCustomSelectorLabel-${!this.panelIsHidden && 'open'}`],
-            `${this._isLoading ? loader : icon} <span>${currentLang.name} </span><span class='scLangCustomSelector-arrow'></span>`,
+            `${this._isLoading ? loader : icon} 
+
+<span>${currentLang.name}
+
+</span>`,
             this.root(),
             undefined
         );
 
         let { offsets, location } = this._cfg;
-		// FIXED LOCATION  
-		location = 'TopRight';
-		
-		
+  // FIXED LOCATION  
+  location = 'TopRight';
+  
+  
         if (location == 'BottomRight') {
             this.renderElement('selectedLang', selectedLangInfo);
 
@@ -410,7 +435,6 @@ window.ScCustomLangSelector = function(cfg) {
 
         this.renderLangPanel();
         this.button.classList.toggle('scLangCustomSelector-None', location === 'None');
-		this.updatePosition();
     };
 
     this.setIsLoading = (value) => {
@@ -420,18 +444,6 @@ window.ScCustomLangSelector = function(cfg) {
         }
     };
 
-	this.updatePosition = () => {
-		var target = document.getElementById('navbarSupportedContent');	
-		var container = document.getElementById('scLangSelectorContainer');
-		if (target && container)
-		{
-			var targetRect = target.getBoundingClientRect();
-			container.style.right = (window.innerWidth - targetRect.left) + 'px';
-			container.style.position = 'absolute';
-			container.style.zIndex = 1;
-		}	
-	}
-	
     this.isFirstTime = () => {
         try {
             let v = this.storage.tryGetItem('selector-shown');
@@ -511,7 +523,10 @@ window.ScCustomLangSelector = function(cfg) {
 
     this.renderLangButtons = () => {
         const renderItem = function (lang) {
-            return `<div onclick="${this.id}.switchLang('${lang.locale}', event)" class="scLangItem">${lang.name}</div>`;
+            return `
+<div onclick="${this.id}.switchLang('${lang.locale}', event)" class="scLangItem">${lang.name}
+
+</div>`;
         }.bind(this);
 
         return this.langs
