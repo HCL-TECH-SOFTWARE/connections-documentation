@@ -570,25 +570,3 @@ window.ScCustomLangSelector = function(cfg) {
         this.render();
     };
 }
-
-
-  function onReady(handler) {
-if (document.readyState !== 'loading') {
-handler();
-} else {
-document.addEventListener('DOMContentLoaded', handler);
-}
-   }
-  const observeUrlChange = () => {
-  let oldHref = document.location.href;
-  const body = document.querySelector("body");
-  const observer = new MutationObserver(mutations => {
-    if (oldHref !== document.location.href) {
-      oldHref = document.location.href;
-      if (!document.querySelector('.scLangCustomSelector'))
-          sc.initLangSelector();
-           }
-        });
-    observer.observe(body, { childList: true, subtree: true });
-  };
-  onReady(()=>setTimeout(observeUrlChange, 500));
