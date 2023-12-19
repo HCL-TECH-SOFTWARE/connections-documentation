@@ -43,9 +43,6 @@ markdown_extensions:
   - toc:
       title: On this page
 
-extra_javascript:
-  - assets/javascripts/scCustLangSelect.js
-
 extra:
 #  analytics: 
 #    provider: custom
@@ -65,6 +62,8 @@ edit_uri: edit/main/docs
 # Customization
 extra_css:
   - stylesheets/style.css
+extra_javascript:
+    - javascripts/current.js
 
 plugins:
   - section-index
