@@ -1,0 +1,9 @@
+com.ibm.websphere.personalization
+com.ibm.websphere.personalization.applicationObjects
+com.ibm.websphere.personalization.context
+com.ibm.websphere.personalization.resources
+com.ibm.websphere.personalization.resources.cache
+com.ibm.websphere.personalization.security
+com.ibm.websphere.personalization.transformation
+com.ibm.websphere.query.base
+com.ibm.websphere.query.callbacks
